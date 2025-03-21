@@ -15,7 +15,7 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v5
         name: Build & push Docker image
         with:
-          image: mbaitelman/jnlp-agent-fastlane
+          image: mdouek/jnlp-agent-fastlane
           registry: docker.io
           tags: "beta-${{github.run_id}}, ${{github.sha}}"
           username: ${{ secrets.DOCKER_USERNAME }}
